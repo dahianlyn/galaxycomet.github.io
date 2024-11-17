@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    top: 0;
+    left: 0;
+    position: fixed;
+    justify-content: space-between;
+    background-color: #0c003f;
+    z-index: 3;
+}
+
+.nav1, .nav2, .nav3 {
+    display: flex;
+    align-items: center;
+}
+
+.nav1 img{
+    width: 15vw;
+    height: 14vh;
+    justify-content: center;        
+}
+
+.nav2 {
+    width: 34vw;
+    justify-content: center;
+}
+
+.nav2 i{
+    font-size: 50px;
+    color: #ffffff;
+    letter-spacing: 3.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.fa-desktop:hover,
+.fa-tablet-screen-button:hover,
+.fa-mobile-screen:hover{
+    color: #6a41ff;
+}
+
+.nav3 {
+    width: 33vw;
+    justify-content: center;
+}
+
+.nav3 ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav3 ul li {
+    margin: 0 15px;
+}
+
+.nav3 ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+.links:hover{
+    color: #6a41ff;
+}
+
+section {  
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#seccion_inicio {
+    background-color: #00000000;
+}
+
+#seccion_funciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.buscador {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+    top: -250px;
+    z-index: 1;
+}
+
+.buscador input {
+    padding: 10px;
+    font-size: 24px;
+    width: 34vw;
+    margin-right: 1px;
+    border-radius: 1.5rem;
+    border: 1.5px;
+}
+
+.buscador button {
+    padding: 10px;
+    background-color: #4017d600;
+    color: #fff;
+    width: 4vw;
+    border: none;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    border: 1.5px;
+    transition: 0.5s;
+}
+
+.buscador button:hover{
+    background-color: #ac95ff67;
+}
+
+.buscador button i{
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.texto {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 45%;
+    gap: 15px;
+    max-width: 800px;
+    padding: 80px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    color: #380077;
+    flex-direction: column;
+}
+
+.texto i{
+    font-size: 50px;
+    color: #380077;
+}
+
+#seccion_descargas {
+    background-color: #00000000;
+   z-index: -1;
+}
+
+#seccion_contacto {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.columnaDatos {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapaGoogle {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.datosContacto {
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.datosContacto i{
+    font-size: 1.4rem;
+    color: #380077;
+}
+
+.lista_2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.li_titulo, .li_texto {
+    margin-bottom: 10px;
+}
+
+.li_texto{
+    display: flex;
+    align-items: center;
+    color: #000000af;
+    font-size: 1.1rem;
+}
+
+.li_titulo {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #380077;
+    font-size: 1.3rem;
+}
+
+.formulario {
+    width: 60vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#formulario_2 {
+    height: 50vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#formulario_2 span {
+    display: flex;
+    gap: 10px;
+}
+
+#nombre,
+#apellido,
+#email,
+#telefono,
+#mensaje,
+#enviar {
+    font-size: 1rem;
+}
+
+#formulario_2 input {
+    width: 100%;
+    max-width: 300px;
+    padding: 14px;
+    margin-bottom: 10px;
+    border: 0.2rem solid #ccc;
+    border-radius: 4px;
+    transition: 0.8s;
+}
+
+#formulario_2 button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #6a41ff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+#formulario_2 button:hover {
+    background-color: #380077;
+}
+
+@media screen and (max-width: 768px) {
+    .contacto {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .columnaDatos {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .datosContacto, .formulario {
+        width: 100vw;
+    }
+
+    #formulario_2 {
+        width: 90vw;
+    }
+}
+
+.videofondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.CONTENIDO_INICIO{
+    position: absolute;
+    z-index: 2;
+    text-decoration: #e9fafc;
+    background-color: #00000060;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CONTENIDO_SUP{
+    width: 100vw;
+    height: 50vh;
+    flex-direction: column;
+    display: flex;
+}
+
+.CONTENIDO_INF{
+    width: 100vw;
+    height: 50vh;
+    flex-direction: row;
+    display: flex;
+}
+
+.DIVISIONES_CONTENIDO{
+    width: 12vw;
+    height: 24vh;
+    margin: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1.5px solid;
+    cursor: pointer;
+    background-color: #ab94ff4b;
+    transition: 0.5s;
+}
+
+.DIVISIONES_CONTENIDO:hover{
+    color:#673efd4b;
+}
+
+
+.DIVISIONES_CONTENIDO i{
+    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 1.6rem;
+}
+
+.DIVISIONES_CONTENIDO a{
+    font-size: 0.9rem;
+    color: white;
+}
+
+.partInf {
+    width: 110vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../recursos/img/pexels-pixabay-41949.jpg) center no-repeat;
+    background-size: cover;
+}
